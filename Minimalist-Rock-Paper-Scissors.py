@@ -12,11 +12,10 @@ while repeat == True:
       if(player in choices):
          if player == computer:
             print(("Tie Game!").upper())
-            win = True
          else:
             if (player == "rock" and computer == "scissors") or (player == "paper" and computer == "rock") or (player == "scissors" and computer == "paper"):
                print((player + " beats " + computer + "!\nPlayer Wins!").upper())
             else:
                print((computer + " beats " + player + "!\nComputer Wins!").upper())
-            win = True
+         win = True
    repeat = ((input("Play Again? [y,n] ").lower()) == "y")
